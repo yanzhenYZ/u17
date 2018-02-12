@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CTSHotItemCell" id="gTV-IL-0wX" customClass="CTSHotItemCell" customModule="cartoon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nld-qA-Xf0">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr2-3c-GI7">
+                        <rect key="frame" x="15" y="5" width="70" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nld-qA-Xf0" secondAttribute="bottom" id="871-sb-eJ9"/>
+                <constraint firstItem="lr2-3c-GI7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="PsC-l1-Eqn"/>
+                <constraint firstItem="nld-qA-Xf0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TDy-GQ-jnz"/>
+                <constraint firstAttribute="trailing" secondItem="nld-qA-Xf0" secondAttribute="trailing" id="fVT-cW-1wz"/>
+                <constraint firstAttribute="bottom" secondItem="lr2-3c-GI7" secondAttribute="bottom" constant="5" id="hkI-oe-o7g"/>
+                <constraint firstItem="nld-qA-Xf0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="soP-6d-d3P"/>
+                <constraint firstItem="lr2-3c-GI7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ubH-3a-krH"/>
+                <constraint firstAttribute="trailing" secondItem="lr2-3c-GI7" secondAttribute="trailing" constant="15" id="wot-Vq-cHz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="backView" destination="nld-qA-Xf0" id="Uxv-3g-xSd"/>
+                <outlet property="nameLabel" destination="lr2-3c-GI7" id="SbW-BJ-lra"/>
+            </connections>
+            <point key="canvasLocation" x="-329" y="-57"/>
+        </collectionViewCell>
+    </objects>
+</document>
