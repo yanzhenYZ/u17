@@ -8,51 +8,46 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class UCatalogViewController: UICollectionViewController {
 
+    public var chapters = [USChapterList]()
     private var startOffsetY: CGFloat = 0
     init() {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 2.5
-        layout.minimumInteritemSpacing = 0
-        layout.itemSize = CGSize(width: (WIDTH - 10) / 3, height: 190)
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 15
+        layout.itemSize = CGSize(width: (WIDTH - 35) / 2, height: 40)
         layout.headerReferenceSize = CGSize(width: 0, height: 40)
-        layout.footerReferenceSize = CGSize(width: 0, height: 10)
         super.init(collectionViewLayout: layout)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView?.backgroundColor = UIColor.white
+        collectionView?.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
+        collectionView?.register(UINib.init(nibName: "UDCatalogCell", bundle: nil), forCellWithReuseIdentifier: "UDCatalogCell")
 
         // Do any additional setup after loading the view.
     }
 
-
-// MARK: UICollectionViewDataSource
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    public func setChapters(_ chapters: [USChapterList]) {
+        self.chapters.removeAll()
+        self.chapters += chapters
+    }
+    
+    public func reloadData() {
+        collectionView?.reloadData()
     }
 
-
+// MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return chapters.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UDCatalogCell", for: indexPath) as! UDCatalogCell
+        cell.configure(chapters[indexPath.row])
         return cell
     }
 

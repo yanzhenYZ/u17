@@ -22,7 +22,6 @@ class CTRankViewController: UITableViewController {
             self?.getRankData()
         })
         tableView.register(UINib.init(nibName: "CTHRankingCell", bundle: nil), forCellReuseIdentifier: "CTHRankingCell")
-        tableView.register(CTHRankFooterView.self, forHeaderFooterViewReuseIdentifier: "CTHRankFooterView")
         getRankData()
     }
 
@@ -61,7 +60,9 @@ class CTRankViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return tableView.dequeueReusableHeaderFooterView(withIdentifier: "CTHRankFooterView")
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.clear
+        return footerView
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

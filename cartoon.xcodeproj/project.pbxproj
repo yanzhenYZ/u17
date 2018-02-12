@@ -54,7 +54,6 @@
 		9BC48FCB202017EE0073A734 /* CTHRankList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC48FCA202017EE0073A734 /* CTHRankList.swift */; };
 		9BC48FCE202019680073A734 /* CTHRankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC48FCC202019680073A734 /* CTHRankingCell.swift */; };
 		9BC48FCF202019680073A734 /* CTHRankingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC48FCD202019680073A734 /* CTHRankingCell.xib */; };
-		9BC48FD120201F590073A734 /* CTHRankFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC48FD020201F590073A734 /* CTHRankFooterView.swift */; };
 		9BD0A3E02029424D0028361C /* UComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A3DE2029424D0028361C /* UComicViewController.swift */; };
 		9BD0A3E12029424D0028361C /* UComicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0A3DF2029424D0028361C /* UComicViewController.xib */; };
 		9BD0A3E920295A770028361C /* UDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A3E820295A770028361C /* UDetailViewController.swift */; };
@@ -75,6 +74,8 @@
 		9BE17966203133F0002FA219 /* UDLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE17964203133F0002FA219 /* UDLikeCell.swift */; };
 		9BE17967203133F0002FA219 /* UDLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE17965203133F0002FA219 /* UDLikeCell.xib */; };
 		9BE1796920313725002FA219 /* UGuessComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE1796820313725002FA219 /* UGuessComic.swift */; };
+		9BE1796C203183E4002FA219 /* UDCatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE1796A203183E4002FA219 /* UDCatalogCell.swift */; };
+		9BE1796D203183E4002FA219 /* UDCatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE1796B203183E4002FA219 /* UDCatalogCell.xib */; };
 		9BE7779E1FE26422007B3507 /* CTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE777951FE26422007B3507 /* CTHomeViewController.swift */; };
 		9BE7779F1FE26422007B3507 /* CTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE777961FE26422007B3507 /* CTHomeViewController.xib */; };
 		9BE777A01FE26422007B3507 /* CTHRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE777971FE26422007B3507 /* CTHRecommendViewController.swift */; };
@@ -139,7 +140,6 @@
 		9BC48FCA202017EE0073A734 /* CTHRankList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHRankList.swift; sourceTree = "<group>"; };
 		9BC48FCC202019680073A734 /* CTHRankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHRankingCell.swift; sourceTree = "<group>"; };
 		9BC48FCD202019680073A734 /* CTHRankingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTHRankingCell.xib; sourceTree = "<group>"; };
-		9BC48FD020201F590073A734 /* CTHRankFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTHRankFooterView.swift; sourceTree = "<group>"; };
 		9BD0A3DE2029424D0028361C /* UComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicViewController.swift; sourceTree = "<group>"; };
 		9BD0A3DF2029424D0028361C /* UComicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UComicViewController.xib; sourceTree = "<group>"; };
 		9BD0A3E820295A770028361C /* UDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDetailViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +160,8 @@
 		9BE17964203133F0002FA219 /* UDLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDLikeCell.swift; sourceTree = "<group>"; };
 		9BE17965203133F0002FA219 /* UDLikeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UDLikeCell.xib; sourceTree = "<group>"; };
 		9BE1796820313725002FA219 /* UGuessComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGuessComic.swift; sourceTree = "<group>"; };
+		9BE1796A203183E4002FA219 /* UDCatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDCatalogCell.swift; sourceTree = "<group>"; };
+		9BE1796B203183E4002FA219 /* UDCatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UDCatalogCell.xib; sourceTree = "<group>"; };
 		9BE777951FE26422007B3507 /* CTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTHomeViewController.swift; sourceTree = "<group>"; };
 		9BE777961FE26422007B3507 /* CTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTHomeViewController.xib; sourceTree = "<group>"; };
 		9BE777971FE26422007B3507 /* CTHRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTHRecommendViewController.swift; sourceTree = "<group>"; };
@@ -389,6 +391,8 @@
 				9BE1796120313237002FA219 /* UDGuessLikeCell.xib */,
 				9BE17964203133F0002FA219 /* UDLikeCell.swift */,
 				9BE17965203133F0002FA219 /* UDLikeCell.xib */,
+				9BE1796A203183E4002FA219 /* UDCatalogCell.swift */,
+				9BE1796B203183E4002FA219 /* UDCatalogCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -430,7 +434,6 @@
 				9BC48FC7201F1DD70073A734 /* CTHVIPCell.xib */,
 				9BC48FCC202019680073A734 /* CTHRankingCell.swift */,
 				9BC48FCD202019680073A734 /* CTHRankingCell.xib */,
-				9BC48FD020201F590073A734 /* CTHRankFooterView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				9BC48FCF202019680073A734 /* CTHRankingCell.xib in Resources */,
 				9B8DA2CA2006FE4D006DAF1A /* CTRTopCell.xib in Resources */,
 				9B2FBD68201719B70066D935 /* CTRecommendCell.xib in Resources */,
+				9BE1796D203183E4002FA219 /* UDCatalogCell.xib in Resources */,
 				9BE1795F20312B63002FA219 /* UDMonthCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,8 +626,8 @@
 				9BE17966203133F0002FA219 /* UDLikeCell.swift in Sources */,
 				9BD0A3F8202C39CE0028361C /* UDDescriptionCell.swift in Sources */,
 				9BC48FC3201F05670073A734 /* CTHTitleView.swift in Sources */,
+				9BE1796C203183E4002FA219 /* UDCatalogCell.swift in Sources */,
 				9B5E005A20241115005879EF /* CTCSearchViewController.swift in Sources */,
-				9BC48FD120201F590073A734 /* CTHRankFooterView.swift in Sources */,
 				9B5E00632024189E005879EF /* CTSCollectionViewAlignedLayout.swift in Sources */,
 				9BD0A3EF202AA6410028361C /* USComicModel.swift in Sources */,
 				9BE777A51FE26422007B3507 /* CTSubscribeViewController.swift in Sources */,

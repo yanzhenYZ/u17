@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UDCatalogCell" id="gTV-IL-0wX" customClass="UDCatalogCell" customModule="cartoon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCy-Hm-Quf">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comicinfo_chapter_new" translatesAutoresizingMaskIntoConstraints="NO" id="2g6-lb-F58">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comicinfo_chapter_vip" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Dn-wFV">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelsfsdklkfskksk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1q-SF-e4s">
+                                <rect key="frame" x="15" y="0.0" width="140" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L1q-SF-e4s" firstAttribute="leading" secondItem="QCy-Hm-Quf" secondAttribute="leading" constant="15" id="0cq-qZ-k0B"/>
+                            <constraint firstItem="zcm-Dn-wFV" firstAttribute="top" secondItem="QCy-Hm-Quf" secondAttribute="top" id="3LL-jF-u3x"/>
+                            <constraint firstAttribute="bottom" secondItem="L1q-SF-e4s" secondAttribute="bottom" id="3w9-YJ-HGM"/>
+                            <constraint firstItem="L1q-SF-e4s" firstAttribute="top" secondItem="QCy-Hm-Quf" secondAttribute="top" id="Khj-wV-8T5"/>
+                            <constraint firstItem="zcm-Dn-wFV" firstAttribute="leading" secondItem="QCy-Hm-Quf" secondAttribute="leading" id="PoD-sL-XpR"/>
+                            <constraint firstItem="2g6-lb-F58" firstAttribute="top" secondItem="QCy-Hm-Quf" secondAttribute="top" id="SjF-T8-EKb"/>
+                            <constraint firstAttribute="trailing" secondItem="L1q-SF-e4s" secondAttribute="trailing" constant="15" id="YPO-8C-oD9"/>
+                            <constraint firstAttribute="trailing" secondItem="2g6-lb-F58" secondAttribute="trailing" id="dQZ-HM-02Y"/>
+                            <constraint firstAttribute="trailing" secondItem="zcm-Dn-wFV" secondAttribute="trailing" id="fqv-RM-5gZ"/>
+                            <constraint firstAttribute="bottom" secondItem="zcm-Dn-wFV" secondAttribute="bottom" id="iNq-vV-5gC"/>
+                            <constraint firstAttribute="bottom" secondItem="2g6-lb-F58" secondAttribute="bottom" id="kvg-4n-9al"/>
+                            <constraint firstItem="2g6-lb-F58" firstAttribute="leading" secondItem="QCy-Hm-Quf" secondAttribute="leading" id="lKc-cR-sLC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QCy-Hm-Quf" secondAttribute="bottom" id="CRc-fs-xct"/>
+                <constraint firstItem="QCy-Hm-Quf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VTt-70-1G7"/>
+                <constraint firstItem="QCy-Hm-Quf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wfz-kH-e3U"/>
+                <constraint firstAttribute="trailing" secondItem="QCy-Hm-Quf" secondAttribute="trailing" id="qf0-IR-b8S"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="backView" destination="QCy-Hm-Quf" id="w7i-Ir-BTl"/>
+                <outlet property="chapter_new" destination="2g6-lb-F58" id="aWV-bw-DpB"/>
+                <outlet property="chapter_vip" destination="zcm-Dn-wFV" id="YqP-vv-eIo"/>
+                <outlet property="nameLabel" destination="L1q-SF-e4s" id="5H4-Kz-rb4"/>
+            </connections>
+            <point key="canvasLocation" x="-481" y="-25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="comicinfo_chapter_new" width="189" height="39"/>
+        <image name="comicinfo_chapter_vip" width="189" height="39"/>
+    </resources>
+</document>

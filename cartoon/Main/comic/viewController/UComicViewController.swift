@@ -26,7 +26,6 @@ class UComicViewController: UIViewController {
     private var detailVC: UDetailViewController!
     private var catalogVC: UCatalogViewController!
     private var commentVC: UCommentViewController!
-    private var chapters = [USChapterList]()
     private var comicID: Int = 0
     convenience init(_ comicID: Int) {
         self.init()
@@ -117,13 +116,7 @@ private extension UComicViewController {
         CTHttpTool.get(.DetailRealtime(comicID: comicID), success: { (response) in
             let returnData = response["data"]!["returnData"] as! [String : Any]
             let comic = returnData["comic"] as! [String : Any]
-            let chapter_list = returnData["chapter_list"] as! [[String : Any]]
-            
-//            for chapterD in chapter_list {
-//                let chapter = USChapterList()
-//                chapter.setValuesForKeys(chapterD)
-//                self.chapters.append(chapter)
-//            }
+//            let chapter_list = returnData["chapter_list"] as! [[String : Any]]
             
             let dcomic = UDComicModel(comic)
             self.setClick(dcomic)
@@ -142,7 +135,8 @@ private extension UComicViewController {
             let chapter_list = returnData["chapter_list"] as! [[String : Any]]
             let otherWorks = returnData["otherWorks"] as! [[String : Any]]
             
-            self.chapters += chapter_list.map { USChapterList($0) }
+            let chapters = chapter_list.map { USChapterList($0) }
+            self.catalogVC.setChapters(chapters)
             let works = otherWorks.map { USOtherWork($0) }
 
             let scomic = USComicModel(comic)
@@ -169,6 +163,7 @@ private extension UComicViewController {
         
         group.notify(queue: DispatchQueue.main) {
             self.detailVC.reloadData()
+            self.catalogVC.reloadData()
         }
     }
     
